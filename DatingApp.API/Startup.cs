@@ -55,11 +55,12 @@ namespace datingApp.API
                 app.UseHsts();
             }
             app.UseCors(c=>c.AllowAnyHeader().AllowAnyOrigin().AllowCredentials());
+             app.UseAuthentication();
              app.UseMvc();
             
             //app.UseHttpsRedirection();
          
-            app.UseAuthentication();
+           
            
             
            
